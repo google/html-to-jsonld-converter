@@ -21,7 +21,7 @@ railroad==0.5.0
 redis==5.0.4
 Sphinx==7.3.7
 thread==2.0.1
-tornado==6.4
+tornado==6.4.1
 trove_classifiers==2024.4.10
 urllib3_secure_extra==0.1.0
 xmlrpclib==1.0.1
