@@ -1,0 +1,156 @@
+{
+    "@context": {
+        "s": "http://schema.org/",
+        "g": "http://schema.googleapis.com/"
+    },
+    "@type": "g:Showcase",
+    "g:showcaseBlock": [
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\uc5d0\ub514\ubd07\uc73c\ub85c \uc791\uc131\ud568",
+            "s:itemListElement": [
+                {
+                    "@context": {
+                        "s": "http://schema.org/",
+                        "g": "http://schema.googleapis.com/"
+                    },
+                    "@type": "g:Showcase",
+                    "g:showcaseBlock": [
+                        {
+                            "@type": "g:MediaGallery",
+                            "g:layoutHint": "LayoutColumns1",
+                            "s:image": [
+                                "1292744.jpg",
+                                "6901497.jpg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII="
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\uace0\uc561\uacb0\uc81c\uc758 \uacbd\uc6b0 \uc548\uc804\uc744 \uc704\ud574 \uce74\ub4dc\uc0ac\uc5d0\uc11c \ud655\uc778\uc804\ud654\ub97c \ub4dc\ub9b4 \uc218\ub3c4 \uc788\uc2b5\ub2c8\ub2e4. \ud655\uc778\uacfc\uc815\uc5d0\uc11c \ub3c4\ub09c \uce74\ub4dc\uc758 \uc0ac\uc6a9\uc774\ub098 \ud0c0\uc778 \uba85\uc758\uc758 \uc8fc\ubb38\ub4f1\n      \uc815\uc0c1\uc801\uc778 \uc8fc\ubb38\uc774 \uc544\ub2c8\ub77c\uace0 \ud310\ub2e8\ub420 \uacbd\uc6b0 \uc784\uc758\ub85c \uc8fc\ubb38\uc744 \ubcf4\ub958 \ub610\ub294 \ucde8\uc18c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubb34\ud1b5\uc7a5 \uc785\uae08\uc740 \uc0c1\ud488 \uad6c\ub9e4 \ub300\uae08\uc740 PC\ubc45\ud0b9, \uc778\ud130\ub137\ubc45\ud0b9, \ud154\ub808\ubc45\ud0b9 \ud639\uc740 \uac00\uae4c\uc6b4 \uc740\ud589\uc5d0\uc11c \uc9c1\uc811 \uc785\uae08\ud558\uc2dc\uba74 \ub429\ub2c8\ub2e4. \uc8fc\ubb38\uc2dc \uc785\ub825\ud55c\u00a0\uc785\uae08\uc790\uba85\uacfc \uc2e4\uc81c\uc785\uae08\uc790\uc758 \uc131\uba85\uc774 \ubc18\ub4dc\uc2dc \uc77c\uce58\ud558\uc5ec\uc57c \ud558\uba70, 7\uc77c \uc774\ub0b4\ub85c \uc785\uae08\uc744 \ud558\uc154\uc57c \ud558\uba70\u00a0\uc785\uae08\ub418\uc9c0\n      \uc54a\uc740 \uc8fc\ubb38\uc740 \uc790\ub3d9\ucde8\uc18c \ub429\ub2c8\ub2e4."
+                }
+            ]
+        },
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\uc0c1\ud488\uacb0\uc81c\uc815\ubcf4"
+        },
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\ubc30\uc1a1 \ubc29\ubc95 : \ud0dd\ubc30",
+            "s:itemListElement": [
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\ubc30\uc1a1 \uc9c0\uc5ed : \uc804\uad6d\uc9c0\uc5ed"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\ubc30\uc1a1 \ube44\uc6a9 : \n\uffe61,000 ~ \uffe62,500\n\n\n\n\n\n\n::DEVLIERY_BENEFIT_HTML::\n\uad6c\ub9e4\uc870\uac74\uc5d0 \ub530\ub77c \ubc30\uc1a1\ube44 \ucc28\ub4f1\ubd80\uacfc\n\n\n\n\n\uad6c\ub9e4\uae08\uc561\n\ubc30\uc1a1\ube44\n\n\n\n\uffe61 \uc774\uc0c1 ~ \uffe650,000 \ubbf8\ub9cc\uffe62,500\uffe650,000 \uc774\uc0c1 ~ \uffe69,999,999 \ubbf8\ub9cc\uffe61,000"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\uffe61,000 ~ \uffe62,500"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "::DEVLIERY_BENEFIT_HTML::"
+                }
+            ]
+        },
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\uad6c\ub9e4\uc870\uac74\uc5d0 \ub530\ub77c \ubc30\uc1a1\ube44 \ucc28\ub4f1\ubd80\uacfc",
+            "s:itemListElement": [
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\ubc30\uc1a1 \uae30\uac04 : 2\uc77c ~ 5\uc77c"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\ubc30\uc1a1 \uc548\ub0b4 : \uc0b0\uac04\ubcbd\uc9c0\ub098 \ub3c4\uc11c\uc9c0\ubc29\uc740 \ubcc4\ub3c4\uc758 \ucd94\uac00\uae08\uc561\uc744 \uc9c0\ubd88\ud558\uc154\uc57c \ud558\ub294 \uacbd\uc6b0\uac00 \uc788\uc2b5\ub2c8\ub2e4. \uace0\uac1d\ub2d8\uaed8\uc11c \uc8fc\ubb38\ud558\uc2e0 \uc0c1\ud488\uc740 \uc785\uae08 \ud655\uc778\ud6c4 \ubc30\uc1a1\ud574 \ub4dc\ub9bd\ub2c8\ub2e4. \ub2e4\ub9cc, \uc0c1\ud488\uc885\ub958\uc5d0 \ub530\ub77c\uc11c \uc0c1\ud488\uc758 \ubc30\uc1a1\uc774 \ub2e4\uc18c \uc9c0\uc5f0\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
+                }
+            ]
+        },
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\uad50\ud658 \ubc0f \ubc18\ud488\uc815\ubcf4",
+            "s:itemListElement": [
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:headline": "\uad50\ud658 \ubc0f \ubc18\ud488 \uc8fc\uc18c - \uc11c\uc6b8 \uc11c\ub300\ubb38\uad6c \ucda9\uc815\ub85c3\uac00 3-31 \ud5c8\ud31d\uc5f0\uad6c\uc18c"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:headline": "\uad50\ud658 \ubc0f \ubc18\ud488\uc774 \uac00\ub2a5\ud55c \uacbd\uc6b0 - \uacc4\uc57d\ub0b4\uc6a9\uc5d0 \uad00\ud55c \uc11c\uba74\uc744 \ubc1b\uc740 \ub0a0\ubd80\ud130 7\uc77c. \ub2e8, \uadf8 \uc11c\uba74\uc744 \ubc1b\uc740 \ub54c\ubcf4\ub2e4 \uc7ac\ud654\ub4f1\uc758 \uacf5\uae09\uc774 \ub2a6\uac8c \uc774\ub8e8\uc5b4\uc9c4 \uacbd\uc6b0\uc5d0\ub294 \uc7ac\ud654\ub4f1\uc744 \uacf5\uae09\ubc1b\uac70\ub098 \uc7ac\ud654\ub4f1\uc758 \uacf5\uae09\uc774 \uc2dc\uc791\ub41c \ub0a0\ubd80\ud130 7\uc77c \uc774\ub0b4"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \uacf5\uae09\ubc1b\uc73c\uc2e0 \uc0c1\ud488 \ubc0f \uc6a9\uc5ed\uc758 \ub0b4\uc6a9\uc774 \ud45c\uc2dc.\uad11\uace0 \ub0b4\uc6a9\uacfc \ub2e4\ub974\uac70\ub098 \uacc4\uc57d\ub0b4\uc6a9\uacfc \ub2e4\ub974\uac8c \uc774\ud589\ub41c \ub54c\uc5d0\ub294 \ub2f9\ud574 \uc7ac\ud654 \ub4f1\uc744 \uacf5\uae09\ubc1b\uc740 \ub0a0 \ubd80\ud130 3\uc6d4\uc774\ub0b4, \uadf8\uc0ac\uc2e4\uc744 \uc54c\uac8c \ub41c \ub0a0 \ub610\ub294 \uc54c \uc218 \uc788\uc5c8\ub358 \ub0a0\ubd80 30\uc77c\uc774\ub0b4"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:headline": "\uad50\ud658 \ubc0f \ubc18\ud488\uc774 \ubd88\uac00\ub2a5\ud55c \uacbd\uc6b0 - \uc774\uc6a9\uc790\uc5d0\uac8c \ucc45\uc784 \uc788\ub294 \uc0ac\uc720\ub85c \uc7ac\ud654 \ub4f1\uc774 \uba78\uc2e4 \ub610\ub294 \ud6fc\uc190\ub41c \uacbd\uc6b0(\ub2e4\ub9cc, \uc7ac\ud654 \ub4f1\uc758 \ub0b4\uc6a9\uc744 \ud655\uc778\ud558\uae30 \uc704\ud558\uc5ec \ud3ec\uc7a5 \ub4f1\uc744 \ud6fc\uc190\ud55c \uacbd\uc6b0\uc5d0\ub294 \uccad\uc57d\ucca0\ud68c\ub97c \ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4)"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \uc774\uc6a9\uc790\uc758 \uc0ac\uc6a9 \ub610\ub294 \uc77c\ubd80 \uc18c\ube44\uc5d0 \uc758\ud558\uc5ec \uc7ac\ud654 \ub4f1\uc758 \uac00\uce58\uac00 \ud604\uc800\ud788 \uac10\uc18c\ud55c \uacbd\uc6b0"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \uc2dc\uac04\uc758 \uacbd\uacfc\uc5d0 \uc758\ud558\uc5ec \uc7ac\ud310\ub9e4\uac00 \uace4\ub780\ud560 \uc815\ub3c4\ub85c \uc7ac\ud654\ub4f1\uc758 \uac00\uce58\uac00 \ud604\uc800\ud788 \uac10\uc18c\ud55c \uacbd\uc6b0"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \ubcf5\uc81c\uac00 \uac00\ub2a5\ud55c \uc7ac\ud654\ub4f1\uc758 \ud3ec\uc7a5\uc744 \ud6fc\uc190\ud55c \uacbd\uc6b0"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \uac1c\ubcc4 \uc8fc\ubb38 \uc0dd\uc0b0\ub418\ub294 \uc7ac\ud654 \ub4f1 \uccad\uc57d\ucca0\ud68c\uc2dc \ud310\ub9e4\uc790\uc5d0\uac8c \ud68c\ubcf5\ud560 \uc218 \uc5c6\ub294 \ud53c\ud574\uac00 \uc608\uc0c1\ub418\uc5b4 \uc18c\ube44\uc790\uc758 \uc0ac\uc804 \ub3d9\uc758\ub97c \uc5bb\uc740 \uacbd\uc6b0"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "- \ub514\uc9c0\ud138 \ucf58\ud150\uce20\uc758 \uc81c\uacf5\uc774 \uac1c\uc2dc\ub41c \uacbd\uc6b0, (\ub2e4\ub9cc, \uac00\ubd84\uc801 \uc6a9\uc5ed \ub610\ub294 \uac00\ubd84\uc801 \ub514\uc9c0\ud138\ucf58\ud150\uce20\ub85c \uad6c\uc131\ub41c \uacc4\uc57d\uc758 \uacbd\uc6b0 \uc81c\uacf5\uc774 \uac1c\uc2dc\ub418\uc9c0 \uc544\ub2c8\ud55c \ubd80\ubd84\uc740 \uccad\uc57d\ucca0\ud68c\ub97c \ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.)"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\u203b \uace0\uac1d\ub2d8\uc758 \ub9c8\uc74c\uc774 \ubc14\ub00c\uc5b4 \uad50\ud658, \ubc18\ud488\uc744 \ud558\uc2e4 \uacbd\uc6b0 \uc0c1\ud488\ubc18\uc1a1 \ube44\uc6a9\uc740 \uace0\uac1d\ub2d8\uaed8\uc11c \ubd80\ub2f4\ud558\uc154\uc57c \ud569\ub2c8\ub2e4."
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "(\uc0c9\uc0c1 \uad50\ud658, \uc0ac\uc774\uc988 \uad50\ud658 \ub4f1 \ud3ec\ud568)"
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:headline": "\ud658\ubd88\uc548\ub0b4 \ud658\ubd88\uc2dc \ubc18\ud488 \ud655\uc778\uc5ec\ubd80\ub97c \ud655\uc778\ud55c \ud6c4 3\uc601\uc5c5\uc77c \uc774\ub0b4\uc5d0 \uacb0\uc81c \uae08\uc561\uc744 \ud658\ubd88\ud574 \ub4dc\ub9bd\ub2c8\ub2e4."
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\uc2e0\uc6a9\uce74\ub4dc\ub85c \uacb0\uc81c\ud558\uc2e0 \uacbd\uc6b0\ub294 \uc2e0\uc6a9\uce74\ub4dc \uc2b9\uc778\uc744 \ucde8\uc18c\ud558\uc5ec \uacb0\uc81c \ub300\uae08\uc774 \uccad\uad6c\ub418\uc9c0 \uc54a\uac8c \ud569\ub2c8\ub2e4."
+                },
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "(\ub2e8, \uc2e0\uc6a9\uce74\ub4dc \uacb0\uc81c\uc77c\uc790\uc5d0 \ub9de\ucd94\uc5b4 \ub300\uae08\uc774 \uccad\uad6c \ub420\uc218 \uc788\uc73c\uba74 \uc774\uacbd\uc6b0 \uc775\uc6d4 \uc2e0\uc6a9\uce74\ub4dc \ub300\uae08\uccad\uad6c\uc2dc \uce74\ub4dc\uc0ac\uc5d0\uc11c \ud658\uae09\ucc98\ub9ac\ub429\ub2c8\ub2e4.)"
+                }
+            ]
+        },
+        {
+            "@type": "g:ShowcaseFeatureSet",
+            "s:headline": "\uc11c\ube44\uc2a4\ubb38\uc758 \uc0c1\ub2f4/\uc8fc\ubb38\uc804\ud654 : 02-393-0977",
+            "s:itemListElement": [
+                {
+                    "@type": "g:ShowcaseFeature",
+                    "s:description": "\uc0c1\ub2f4/\uc8fc\ubb38 \uc774\uba54\uc77c :"
+                }
+            ]
+        }
+    ]
+}

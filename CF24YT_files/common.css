@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
+/*@font-face {*/
+/*    font-family: 'NotoSansKR';*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Regular.woff2') format('woff2'), !* Chrome 26+, Opera 23+, Firefox 39+ *!*/
+/*    url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Regular.woff') format('woff'); !* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *!*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'NotoSansKR';*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    src: url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Medium.woff2') format('woff2'), !* Chrome 26+, Opera 23+, Firefox 39+ *!*/
+/*    url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Medium.woff') format('woff'); !* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *!*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'NotoSansKR';*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    src: url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Bold.woff2') format('woff2'), !* Chrome 26+, Opera 23+, Firefox 39+ *!*/
+/*    url('https://img.echosting.cafe24.com/youtube/mypage/font/NotoSansKR-Bold.woff') format('woff'); !* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *!*/
+/*}*/
+/* tag reset */
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
+html { width:100%; height:100%; }
+body,code { font-size:13px; font-family:'NotoSansKR',"맑은 고딕",Malgun Gothic,AppleSDGothicNeo,"돋움",Dotum,sans-serif; font-weight: 400; color:#353535; background:#fff; }
+body { min-width:320px; }
+body#popup { min-width:0; }
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; }
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
+hr.layout { display:none; }
+a { text-decoration:none; color:#000; }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none; }
+.objHidden { visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table { border:0; margin:0 0 -1px; }
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before { display:none; }
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td { width:auto !important; padding:0; }
+table.nneditor-table { width:auto !important; }
+
+/* 결제진행바 */
+#progressPaybarBackground { position:absolute; z-index:99; left:0; top:0; width:100%; height:100%; }
+#progressPaybarView { position:absolute; z-index:100; top:160px; left:20px; width:471px; font-size:12px; }
+#progressPaybarView .box { height:180px; background:url(//img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif) 0 0 no-repeat; }
+#progressPaybarView .box .graph { padding:15px 0 0 0; text-align:center;}
+#progressPaybarView .box .graph span { display:block; text-align:center; margin:20px 0; }
+#progressPaybarView .box .txt { text-align:center; padding:15px 0 0; color:#555555; }
+div.layerProgress { filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; background-color:#999; }
+
+/* contents */
+#skipNavigation {position:absolute; top:0; left:0; z-index:100; width:100%; height:0;}
+#skipNavigation p, #skipNavigation ul, #skipNavigation ul li {height:0;}
+#skipNavigation p a {position:absolute; left:0; top:0; display:block; overflow:hidden; width:1px; height:1px; margin-left:-1px; margin-bottom:-1px; text-align:center; color:#000; white-space:nowrap;}
+#skipNavigation p a:focus, #skipNavigation p a:hover, #skipNavigation p a:active {width:100%; height:auto; padding:10px 0; background:#c4122f; color:#fff; z-index:100;}
+
+.displaynone { display:none; }
+
+.blind {position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; }
+
+.dimmed { position:fixed; top:0; left:0; z-index:99; width:100%; height:100%; background:#fff; opacity:0.8; filter:alpha(opacity=80); }
+
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
