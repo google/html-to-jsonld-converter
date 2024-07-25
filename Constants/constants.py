@@ -5,6 +5,7 @@ class Constants:
     MIN_HEADLINE_SIZE = 14
     MIN_SUB_HEADLINE_SIZE = 10
     MAX_JSON_LD_LENGTH = 20
+    ASPECT_RATIO_THRESHOLD = 0.06
     DELIMITERS = ['-', '_', '~']
     HEADLINE_TAGS = ['h1', 'h2', 'h3']
     SUB_HEADLINE_TAGS = ['h4', 'h5', 'h6']
@@ -35,6 +36,8 @@ class Constants:
                                    '\"s:description\": \"{txt}\"}}'
     IMG_JSON_LD_TEMPLATE = '{{\"@type\": \"g:ShowcaseFeature\",\"s:image\": ' \
                            '\"{url}\"}}'
+    MEDIA_GALLERY_JSON_LD_TEMPLATE = '{\"@type\": \"g:MediaGallery\",\"g:layoutHint\": \"MediaGalleryLayout\",' \
+                                     '\"s:image\": ['
 
     # Default Output File Path Constants:
     DEFAULT_JSON_OUTPUT_FILE_PATH = 'output/result.json'

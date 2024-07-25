@@ -15,32 +15,19 @@ class Processor:
     @staticmethod
     def aspect_ration_check(img):
         width, height = img.size
-        return width / height < 0.06
+        return width / height < Constants.ASPECT_RATIO_THRESHOLD
 
     @staticmethod
     def split_images(img, ext):
         width, height = img.size
-        chunks = math.ceil(0.06 / (width / height))
+        chunks = math.ceil(Constants.ASPECT_RATIO_THRESHOLD / (width / height))
         chopsize = math.ceil(height / chunks)
-        beg = """{
-                        "@context": {
-                        "s": "http://schema.org/",
-                        "g": "http://schema.googleapis.com/"
-                        },
-                        "@type": "g:Showcase",
-                        "g:showcaseBlock": [
-                        {
-                        "@type": "g:MediaGallery",
-                        "g:layoutHint": "LayoutColumns1",
-                        "s:image": ["""
-        end = "]}]}"
-        json_ld = beg
+        json_ld = Constants.MEDIA_GALLERY_JSON_LD_TEMPLATE
         sequence = random.randrange(1, 10000000)
         # Save Chops of original image
         for y0 in range(0, height, chopsize):
             box = (0, y0, width - 1, y0 + chopsize if y0 + chopsize < height else height - 1)
             sequence = sequence + 1
-            # TODO: Please derive the suffix from the url.
             file_name = str(sequence) + '.' + ext
             # Please host these images in the server.
             img.crop(box).save(file_name)
