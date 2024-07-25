@@ -27,7 +27,6 @@ class JsonSanitizer(Sanitizer):
 class ArgsSanitizer(Sanitizer):
 
     def sanitize(self, args):
-        args['base_url'] = str(urlparse(args['url']).scheme) + '://' + str(
-            urlparse(args['url']).netloc)
+        args['base_url'] = args['url']
         del args['url']
         return args

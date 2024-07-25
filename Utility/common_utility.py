@@ -1,7 +1,10 @@
 import os
+import requests
+import urllib.parse
 
 from Constants.constants import Constants
 
+from PIL import Image
 
 class CommonUtility:
 
@@ -41,3 +44,16 @@ class CommonUtility:
 
     def store_html(self, html, file_path):
         self.__store_html_output(html=html, file_path=file_path)
+
+    @staticmethod
+    def is_url(url):
+        return urllib.parse.urlparse(url).scheme == "https"
+
+    @staticmethod
+    def read_image(url):
+        path = urllib.parse.urlparse(url).path
+        response = requests.get(url, stream=True)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        return Image.open(response.raw), os.path.splitext(path)[1]
+
+

@@ -5,9 +5,49 @@ from bs4 import Comment
 from Constants.constants import Constants
 from Utility.headline_utility import HeadlineUtility
 from Utility.html_section_cleaner import HtmlSectionCleaner
+from Utility.common_utility import CommonUtility
+import math
+import random
 
 
 class Processor:
+
+    @staticmethod
+    def aspect_ration_check(img):
+        width, height = img.size
+        return width / height < 0.06
+
+    @staticmethod
+    def split_images(img, ext):
+        width, height = img.size
+        chunks = math.ceil(0.06 / (width / height))
+        chopsize = math.ceil(height / chunks)
+        beg = """{
+                        "@context": {
+                        "s": "http://schema.org/",
+                        "g": "http://schema.googleapis.com/"
+                        },
+                        "@type": "g:Showcase",
+                        "g:showcaseBlock": [
+                        {
+                        "@type": "g:MediaGallery",
+                        "g:layoutHint": "LayoutColumns1",
+                        "s:image": ["""
+        end = "]}]}"
+        json_ld = beg
+        sequence = random.randrange(1, 10000000)
+        # Save Chops of original image
+        for y0 in range(0, height, chopsize):
+            box = (0, y0, width - 1, y0 + chopsize if y0 + chopsize < height else height - 1)
+            sequence = sequence + 1
+            # TODO: Please derive the suffix from the url.
+            file_name = str(sequence) + '.' + ext
+            # Please host these images in the server.
+            img.crop(box).save(file_name)
+            json_ld = json_ld + '"' + file_name + '",'
+
+        json_ld = json_ld.rstrip(',')
+        return json_ld + end
 
     def __init__(self, soup, section, base_url, carousels):
         self.soup = soup
@@ -29,7 +69,12 @@ class Processor:
             if tag.has_attr('ec-data-src'):
                 src = tag['ec-data-src']
         if src:
-            self.body += Constants.IMG_JSON_LD_TEMPLATE \
+            if CommonUtility.is_url(src):
+                img, ext = CommonUtility.read_image(src)
+                if self.aspect_ration_check(img):
+                    self.body += self.split_images(img, ext) + ","
+            else:
+                self.body += Constants.IMG_JSON_LD_TEMPLATE \
                              .format(url=urljoin(self.base_url, src)) + ','
 
     def __process_list_tag(self, tag):
