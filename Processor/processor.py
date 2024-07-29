@@ -1,10 +1,13 @@
 from urllib.parse import urljoin
+import urllib.parse
+from PIL import Image
 
 from bs4 import Comment
 
 from Constants.constants import Constants
 from Utility.headline_utility import HeadlineUtility
 from Utility.html_section_cleaner import HtmlSectionCleaner
+from Utility.common_utility import CommonUtility
 
 
 class Processor:
@@ -29,6 +32,9 @@ class Processor:
             if tag.has_attr('ec-data-src'):
                 src = tag['ec-data-src']
         if src:
+            if CommonUtility.is_url(src):
+                # if src is a long image, then resize it to MAXIMUM_IMAGE_HEIGHT.
+                src = CommonUtility.resize_long_image(src)
             self.body += Constants.IMG_JSON_LD_TEMPLATE \
                              .format(url=urljoin(self.base_url, src)) + ','
 
