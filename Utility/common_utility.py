@@ -1,7 +1,9 @@
 import os
+import requests
+import urllib.parse
 
 from Constants.constants import Constants
-
+from PIL import Image
 
 class CommonUtility:
 
@@ -41,3 +43,17 @@ class CommonUtility:
 
     def store_html(self, html, file_path):
         self.__store_html_output(html=html, file_path=file_path)
+        
+    @staticmethod
+    def is_url(url):
+        return urllib.parse.urlparse(url).scheme == "https"
+    
+    @staticmethod
+    def read_image(url):
+        # To avoid `requests.exceptions.HTTPError: 403 Client Error: Forbidden`.
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        }
+        response = requests.get(url, stream=True, headers=headers)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        return Image.open(response.raw)

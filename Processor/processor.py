@@ -1,10 +1,13 @@
 from urllib.parse import urljoin
+import urllib.parse
+from PIL import Image
 
 from bs4 import Comment
 
 from Constants.constants import Constants
 from Utility.headline_utility import HeadlineUtility
 from Utility.html_section_cleaner import HtmlSectionCleaner
+from Utility.common_utility import CommonUtility
 
 
 class Processor:
@@ -18,6 +21,33 @@ class Processor:
         self.curr_text = ''
         self.is_curr_tag_headline = False
         self.is_curr_tag_sub_headline = False
+        
+    @staticmethod
+    def suffix_resize_url(url):
+        """Inserts '-resize' into a URL before the file extension."""
+        parsed_url = urllib.parse.urlparse(url)
+        # Handle cases where there might be query parameters or fragments
+        path_parts = parsed_url.path.rsplit(".", 1)  # Split only on the last "."
+        if len(path_parts) == 2:
+            new_path = f"{path_parts[0]}-resize.{path_parts[1]}"
+        else:
+            # If no extension, simply append to the end
+            new_path = parsed_url.path + "-resize"
+        # Reconstruct the URL with the modified path
+        return parsed_url._replace(path=new_path).geturl()
+
+    @staticmethod
+    def resize_long_image(url):
+        img = CommonUtility.read_image(url)
+        width, height = img.size
+        aspect_ratio = width/height
+        if height > Constants.MAXIMUM_IMAGE_HEIGHT:
+            resized_img = img.resize((int(aspect_ratio*Constants.MAXIMUM_IMAGE_HEIGHT), Constants.MAXIMUM_IMAGE_HEIGHT), resample=Image.Resampling.NEAREST)
+            resized_url = Processor.suffix_resize_url(url)
+            # host this image with new url, feel free to use `resized_url`
+            # resized_img.save(resized_url)
+            return resized_url
+        return url
 
     def __process_image_tag(self, tag):
         # If tag belongs to image tag, extract the source, add baseurl to it and
@@ -29,6 +59,8 @@ class Processor:
             if tag.has_attr('ec-data-src'):
                 src = tag['ec-data-src']
         if src:
+            if CommonUtility.is_url(src):
+                src = self.resize_long_image(src)
             self.body += Constants.IMG_JSON_LD_TEMPLATE \
                              .format(url=urljoin(self.base_url, src)) + ','
 
