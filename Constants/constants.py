@@ -5,7 +5,7 @@ class Constants:
     MIN_HEADLINE_SIZE = 14
     MIN_SUB_HEADLINE_SIZE = 10
     MAX_JSON_LD_LENGTH = 20
-    MAXIMUM_IMAGE_HEIGHT = 11000
+    MAXIMUM_IMAGE_HEIGHT = 16000
     DELIMITERS = ['-', '_', '~']
     HEADLINE_TAGS = ['h1', 'h2', 'h3']
     SUB_HEADLINE_TAGS = ['h4', 'h5', 'h6']

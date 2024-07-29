@@ -33,6 +33,7 @@ class Processor:
                 src = tag['ec-data-src']
         if src:
             if CommonUtility.is_url(src):
+                # if src is a long image, then resize it to MAXIMUM_IMAGE_HEIGHT.
                 src = CommonUtility.resize_long_image(src)
             self.body += Constants.IMG_JSON_LD_TEMPLATE \
                              .format(url=urljoin(self.base_url, src)) + ','
