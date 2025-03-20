@@ -5,6 +5,7 @@ from bs4 import Comment
 from Constants.constants import Constants
 from Utility.headline_utility import HeadlineUtility
 from Utility.html_section_cleaner import HtmlSectionCleaner
+from Utility.common_utility import CommonUtility
 
 
 class Processor:
@@ -29,8 +30,10 @@ class Processor:
             if tag.has_attr('ec-data-src'):
                 src = tag['ec-data-src']
         if src:
-            self.body += Constants.IMG_JSON_LD_TEMPLATE \
-                             .format(url=urljoin(self.base_url, src)) + ','
+            if is_image_url_valid(urljoin(self.base_url, src)):
+                self.body += Constants.IMG_JSON_LD_TEMPLATE \
+                             .format(url=urljoin(self.base_url, src)) + ','    
+            
 
     def __process_list_tag(self, tag):
         # If tag belongs to list tag, extract the list text and additionally
