@@ -51,24 +51,6 @@ class CommonUtility:
             if not all([result.scheme, result.netloc]):
                 return False
 
-            # Send a HEAD request to check the status without downloading the whole image
-            response = requests.head(url, timeout=5)  # Set a timeout
-
-            # Check for 200 OK status
-            if response.status_code == 200:
-                # Optionally check the content-type to confirm it's an image
-                content_type = response.headers.get('content-type')
-                if content_type and content_type.startswith('image/'):
-                    return True
-                else:
-                    return False #It's 200, but not an image.
-
-            else:
-                return False
-
-        except requests.exceptions.RequestException:
-            # Handle connection errors, timeouts, etc.
-            return False
         except ValueError: #invalid url parsing
             return False
         except Exception as e: #Catch any other exception
